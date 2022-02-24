@@ -12,48 +12,52 @@ video_background:
   button_link: /listings
   enable_black_text: false
 slideshow:
-  - heading: THEME UNDER CONSTRUCTION
+  - heading: Guam real estate made easy.
     subtitle:
     link_label: Read More
     link: https://www.hungryram.com
     image: >-
       https://res.cloudinary.com/hungryram19/image/upload/v1630458883/templates/realestate2/shutterstock_12168997453_dgp9fa.jpg
-    body: >-
-      This theme is currently being updated by our team. Please contact
-      [ram@hungryram.com](mailto:ram@hungryram.com) or check back again later.
-      Thank you\!
+    body: Residential &middot; Commercial &middot; Property Management
     enable_white_text: false
-  - heading: Super Versatile for Custom Features
-    subtitle:
-    link_label: Contact
-    link: /contact
-    body: >-
-      Need features specific for your business? Get in touch and we'll be happy
-      to help
-    enable_white_text: false
-    image: >-
-      https://res.cloudinary.com/hungryram19/image/upload/v1628902200/templates/realestate2/bathroom-bg3_onhi8u.jpg
 home_sections:
   - template: text-and-image
-    heading: Welcome to our Real Estate Website
-    body:
+    heading: Why National Realty?
+    body: >-
+      We provide sound advice so you can make the best possible decisions. We
+      offer premium customer service to make you the \#1 priority, which means
+      “less about us, more about you.” We innovate to make your real estate
+      journey easier. This is our approach. These are the cornerstones of our
+      business.
     button:
     button_link:
     image:
     image_alt_tag:
     image_width: 400
-  - template: featured-listings
-    heading:
+  - _type: featured-boxes
+    template: featured-boxes
+    heading: Let's get started
     body:
-  - template: active-listings
-    heading: Active Listings
-    body:
-  - template: text-and-contact-form
-    heading: New Heading
-    body: the new body
-    background_image: /uploads/images/first-time-home-buyer-insurance.jpg
-    form:
-      heading: Send a message
-      body: like us
+    blocks:
+      - label:
+        heading: Buy
+        image: /uploads/images/20200823-112100-2-768x512.webp
+        link:
+      - label:
+        heading: Sell
+        image: /uploads/images/white-exterior-home-in-guam.jpg
+        link: /sell/
+      - label:
+        heading: Lease
+        image:
+        link: /lease/
+      - label:
+        heading: Featured
+        image:
+        link:
+  - _type: team-carousel
+    template: home-agent
+    heading: Our Team
+    body: Let our team of professionals help you.
 ---
 
