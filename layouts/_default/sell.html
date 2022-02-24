@@ -1,0 +1,40 @@
+{{ define "main" }}
+    <div class="uk-section">
+        <div class="uk-container uk-container-small">
+            <div class="uk-child-width-1-2@s" uk-grid>
+                <div>
+                    <div class="editable">
+                        <h2>Homefix by National Realty</h2>
+                        <p>Need to prepare your property first? We can help with that too. Services include:</p>
+                        <ul>
+                            <li>Deep-cleaning</li>
+                            <li>Repairs (plumbing, electrical, HVAC, carpentry, etc.)</li>
+                            <li>Painting</li>
+                            <li>Landscaping</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="editable">
+                        <img src="https://res.cloudinary.com/hungryram19/image/upload/v1642236335/earl-rhee/nrguam/livingroom_qnfgri.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-section uk-section-large uk-light" style="background: #0d234a">
+        <div class="hero-overlay"></div>
+        <div class="uk-container uk-container-large">
+            <div class="uk-flex uk-flex-center">
+                <div class="uk-width-2xlarge">
+                    <div class="editable">
+                        <h2>Let's get started!</h2>
+                    </div>
+                    <div class="uk-margin-medium-top">
+                        {{ partial "custom-form" . }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{{ end }}

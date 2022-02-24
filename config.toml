@@ -1,0 +1,17 @@
+baseURL = "/"
+languageCode = "en-us"
+summaryLength = 25
+enableRobotsTXT = "true"
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+[taxonomies]
+category = "categories"
+cities = "cities"
+featured = "featured"
+properties = "properties"
+states = "states"
+status = "status"
+tag = "tags"
+[module]
+[[module.imports]]
+path = "github.com/hungryram/vesper-main-template-module"

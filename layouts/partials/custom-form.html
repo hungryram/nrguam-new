@@ -1,0 +1,58 @@
+{{ $buttonColor := $.Site.Data.appearance.colors }}
+{{ $linkColor := $.Site.Data.appearance.colors.links }}
+<form name="{{ .Title }} Form" method="POST" netlify-honeypot="bot-field" data-netlify="true" class="uk-grid-small" uk-grid action="/thank-you">
+    <input name="bot-field" type="hidden" />
+    <input type="hidden" name="Subject" value="Website {{ .Title }} Form">
+    <input name="Source" type="hidden" value="{{ .Permalink }}" />
+
+    <div class="uk-width-1-2@s">
+        <input class="uk-input" type="text" placeholder="First Name" name="first name">
+    </div>
+    <div class="uk-width-1-2@s">
+        <input class="uk-input" type="text" placeholder="Last Name" name="last name">
+    </div>
+    <div class="uk-width-1-2@s">
+        <input class="uk-input" type="number" placeholder="Phone" name="Phone">
+    </div>
+    <div class="uk-width-1-2@s">
+        <input class="uk-input" type="text" placeholder="Email" name="Email">
+    </div>
+    <div class="uk-width-1-1@s">
+        <input class="uk-input" type="text" placeholder="Street Address" name="Street Address">
+    </div>
+    <div class="uk-width-1-1@s">
+        <input class="uk-input" type="text" placeholder="Street Address 2" name="Street Address 2">
+    </div>
+    <div class="uk-width-1-2@s">
+        <input class="uk-input" type="text" placeholder="City" name="City">
+    </div>
+    <div class="uk-width-1-2@s">
+        <input class="uk-input" type="text" placeholder="State/Province" name="State">
+    </div>
+    <div class="uk-width-1-1">
+        <input class="uk-input" type="text" placeholder="Postal/Zip Code" name="Postal">
+    </div>
+    <div class="uk-width-1-1@s">
+        <div class="uk-margin">
+            <div><p>Property Type*</p></div>
+            <div class="uk-form-controls">
+                <label><input class="uk-radio" type="radio" value="House" name="Property Type"> House</label><br>
+                <label><input class="uk-radio" type="radio" value="Multi-Famil" name="Property Type"> Multi-Family</label><br>
+                <label><input class="uk-radio" type="radio" value="Townhome" name="Property Type"> Townhome</label><br>
+                <label><input class="uk-radio" type="radio" value="Condo" name="Property Type"> Condo</label><br>
+                <label><input class="uk-radio" type="radio" value="Land" name="Property Type"> Land</label><br>
+                <label><input class="uk-radio" type="radio" value="Commercial" name="Property Type"> Commercial</label><br>
+                <label><input class="uk-radio" type="radio" value="Other" name="Property Type"> Other</label><br>
+            </div>
+        </div>
+    </div>
+    <div class="uk-width-1-1">
+        <textarea class="uk-textarea" rows="5" placeholder="Additional Comments" name="Message"></textarea>
+    </div>
+    <div class="uk-width-1-1">
+        <button class="uk-button uk-button-primary">Submit</button>
+    </div>
+    <div class="uk-width-1-1">
+        <p>By submitting the form with your information above you are agreeing to our <a style="color:#fff" href="/legal/terms-and-conditions">Terms and Conditions</a> and <a style="color:#fff" href="/legal/privacy-policy">Privacy Policy</a></p>
+    </div>
+</form>

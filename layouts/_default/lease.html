@@ -1,0 +1,34 @@
+{{ define "main" }}
+{{ $buttonColor := $.Site.Data.appearance.colors }}
+{{ $ihfID := .Site.Data.idx.ihf_client_id }}
+    <div class="uk-section uk-section-large">
+        <div class="uk-section uk-text-center">
+            <h2>Find your next rental home.</h2>
+        </div>
+        <div class="uk-container">
+            {{ if $.Site.Data.idx.incomplete_subdomain }}
+            <script type="text/javascript" src="https://{{ $.Site.Data.idx.incomplete_subdomain }}.idxhome.com/site/listing/search/widget/{{ $ihfID }}?style=horizontal"></script>
+            {{ else }}
+            <script type="text/javascript" src="https://{{ $.Site.Data.idx.complete_subdomain }}.idxhome.com/site/listing/search/widget/{{ $ihfID }}?style=horizontal"></script>
+            {{ end }}
+        </div>
+    </div>
+    <div class="uk-section">
+        <div class="uk-container uk-container-small">
+            <div class="uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                <div>
+                    <div class="editable">
+                        <h2>For Landlords</h2>
+                        <p>Click here to get the best landlord support on the island.</p>
+                        <a href="/landlords" class="btn-primary uk-button uk-button-primary" style="background:{{ $buttonColor.button_background_color }};color:{{ $buttonColor.button_text_color }};">Landlords</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="editable">
+                        <img src="https://res.cloudinary.com/hungryram19/image/upload/v1642237880/earl-rhee/nrguam/happy-asian-relaxing-on-couch.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{{ end }}

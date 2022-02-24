@@ -1,0 +1,4 @@
++++
+title = "Landlords"
+layout = "landlords"
++++
